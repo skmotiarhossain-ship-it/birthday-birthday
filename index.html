@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Food Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <!-- Video 1: Intro -->
+        <video id="video1" class="fullscreen-video" autoplay muted playsinline>
+            <source src="files/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Video 2: Transition/Menu Background -->
+        <video id="video2" class="fullscreen-video hidden" muted playsinline>
+            <source src="files/video 2..mp4" type="video/mp4">
+        </video>
+
+        <!-- Video 3: Outro/Delivery -->
+        <video id="video3" class="fullscreen-video hidden" muted playsinline>
+            <source src="files/video 3.mp4" type="video/mp4">
+        </video>
+
+
+
+    </div>
+
+    <!-- Food Menu Overlay -->
+    <div id="food-menu" class="menu-overlay hidden">
+        <h1 class="menu-title">Choose Your Cravings</h1>
+
+        <div class="menu-categories">
+
+            <!-- Category A: Spicy -->
+            <div class="category">
+                <h2>Spicy</h2>
+                <div class="food-items">
+                    <div class="food-item" data-food="pizza">
+                        <img src="files/pizza.png" alt="Pizza">
+                        <span>Pizza</span>
+                    </div>
+                    <div class="food-item" data-food="burger">
+                        <img src="files/burger.jpeg" alt="Burger">
+                        <span>Burger</span>
+                    </div>
+                    <div class="food-item" data-food="donut">
+                        <img src="files/donut.png" alt="Donuts">
+                        <span>Donuts</span> <!-- 'Spicy' Donuts? Following user request strictly -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category B: Sweet -->
+            <div class="category">
+                <h2>Sweet</h2>
+                <div class="food-items">
+                    <div class="food-item" data-food="icecream">
+                        <img src="files/ice creams.jpg" alt="Ice Cream">
+                        <span>Ice Cream</span>
+                    </div>
+                    <div class="food-item" data-food="dessert">
+                        <img src="files/desserts.jpg" alt="Desserts">
+                        <span>Desserts</span>
+                    </div>
+                    <div class="food-item" data-food="dairymilk">
+                        <img src="files/dairymilk.png" alt="Dairy Milk">
+                        <span>Dairy Milk</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Delivery Message Overlay -->
+    <div id="delivery-message" class="message-overlay hidden">
+        <div class="message-content">
+            <p>Your order will be delivered by today</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
